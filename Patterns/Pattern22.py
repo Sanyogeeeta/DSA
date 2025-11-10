@@ -1,5 +1,14 @@
 
 n=4
+for i in range(2*n-1):
+    for j in range(2*n-1):
+        top=i
+        left=j
+        right=2*n-2-j
+        bottom=2*n-2-i
+        print(n-min(top,left,right,bottom),end='')
+    print()
+
 for i in range(1,2*n):
     temp=n
     for j in range(1,2*n):
@@ -14,3 +23,4 @@ for i in range(1,2*n):
         else:
             print(temp,end='')
     print()
+
